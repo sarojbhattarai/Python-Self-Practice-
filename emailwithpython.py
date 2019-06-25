@@ -1,11 +1,13 @@
 import smtplib
+import os
 import imghdr
 
 from email.message import EmailMessage
 
-email_address = 'sarojbhattarai800@gmail.com'
-email_password = '*******************'
-
+#set email_address and email_password on  your environment variables
+email_address = os.environ.get('email_address')
+email_password = os.environ.get('email_password')
+#print(email)
 #contacts = ['hello@sarojb.com.np', 'hi@nischal.com.np', 'hi@aashishtiwari.com.np', 'poshan0126@gmail.com']
 
 msg = EmailMessage()
