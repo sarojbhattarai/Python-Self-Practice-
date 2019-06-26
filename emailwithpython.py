@@ -14,7 +14,7 @@ msg = EmailMessage()
 msg['Subject']='Hello, Lionel Saroj'
 msg['From']= email_address 
 msg['To']=email_address 
-msg.set_content('How are you feeling today?')
+#msg.set_content('How are you feeling today?')
 
 #for htmls and stuffs
 msg.set_content('This is plain text email')
@@ -34,7 +34,7 @@ for file in files:
         #file_type = imghdr.what(f.name) for pdfs and stuffs we don't need it
         file_name = f.name
 
-   # msg.add_attachment(file_data, maintype='image', subtype = file_type, filename = file_name) for image
+   #msg.add_attachment(file_data, maintype='image', subtype = file_type, filename = file_name) for image
     msg.add_attachment(file_data, maintype='application', subtype = 'octet-stream', filename = file_name) 
 '''
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
