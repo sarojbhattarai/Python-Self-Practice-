@@ -8,7 +8,7 @@ from email.message import EmailMessage
 email_address = os.environ.get('email_address')
 email_password = os.environ.get('email_password')
 #print(email)
-#contacts = ['hello@sarojb.com.np', 'hi@nischal.com.np', 'hi@aashishtiwari.com.np', 'poshan0126@gmail.com']
+#contacts = ['hello@sarojb.com.np','prkshgc@gmail.com', 'poshan0126@gmail.com']
 
 msg = EmailMessage()
 msg['Subject']='Hello, Lionel Saroj'
