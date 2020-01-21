@@ -3,6 +3,10 @@ import string
 words = {}
 
 strip = string.whitespace + string.punctuation + string.digits + "\"'"
+#strip is string for those characters we want to ignore 
+
+#to run program: give "python searchwords.py filename" 
+#In this case filename is filename
 
 for filename in sys.argv[1:]:
     for line in open(filename):
